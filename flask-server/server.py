@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/members")
 def members():
-    return {"mem": ['mem1', 'mem2', 'mem3']}\
+    return {"mem": ['mem1', 'mem2', 'mem3', 'mem4']}
     
 
 if __name__ == "__main__":
