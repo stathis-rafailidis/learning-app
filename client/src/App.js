@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
+import Start from './pages/start';  // Import the start page
+import Topic from './pages/topic';  // Import the topic page
 
 const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 let text = "";
@@ -39,7 +41,8 @@ function App() {
             <Routes>
                 <Route exact path="/" element={<Home />} /> 
                 <Route path="/about" element={<About />} />
-                
+                <Route path="/start" element={<Start />} />
+                <Route path="/topic/:topic" element={<Topic />} />
             </Routes>
         </Router>
   )
